@@ -1,0 +1,228 @@
+body {
+    background: linear-gradient(135deg, #239b56 0%, #5dade2 100%);
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    border-radius: 80px;
+    padding: 7rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-height: 550px;
+}
+
+h5 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.todo-card {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    position: relative;
+}
+
+.todo-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* //////////////////////// */
+.done-checkbox {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    transform: scale(2.4);
+}
+
+.edit-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.tag {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.tag-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.tag-color:hover,
+.tag-color.active {
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.list-group-item:hover,
+.list-group-item.active {
+    background-color: #f6d365;
+    color: #fff;
+}
+
+.btn-primary,
+.btn-secondary {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+    background-color: #ff4c39;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #194063;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #ff6f61 0%, #ffcc70 100%);
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-body {
+    background-color: #fff;
+}
+
+.form-label {
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 97, 0.25);
+}
+
+#todoList {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.done-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.done-checkbox label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.done-checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.done-checkbox input[type="checkbox"]:checked + label:after {
+    content: "✔";
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    font-size: 20px;
+    color: green;
+}
+
+.bg-primary {
+    background-color: #7d3c98 !important;
+}
+
+.bg-info {
+    background-color: #2874a6 !important;
+}
+
+.bg-warning {
+    background-color: #d54242 !important;
+}
+
+.bg-danger {
+    background-color: #2ecc71 !important;
+}
+
+.circle {
+    position: absolute;
+    top: 100px;
+    right: 680px;
+    width: 30px;
+    height: 30px;
+    /* background-color: #007bff; */
+    border-radius: 50%;
+}
